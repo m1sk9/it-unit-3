@@ -1,0 +1,13 @@
+[
+  {
+    "label": "Debug (make)",
+    "build": {
+      "command": "make",
+      "args": ["-j8", "DEBUG=1"]
+    },
+    "program": "$ZED_WORKTREE_ROOT/build/prog",
+    "adapter": "CodeLLDB",
+    "request": "launch",
+    "stopOnEntry": false
+  }
+]

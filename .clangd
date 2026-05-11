@@ -1,0 +1,17 @@
+CompileFlags:
+  Add:
+    - -xc
+    - -std=c17
+    - -Wall
+    - -Wextra
+    - -Wpedantic
+
+Diagnostics:
+  UnusedIncludes: Strict
+  ClangTidy:
+    Add:
+      - bugprone-*
+      - performance-*
+      - readability-*
+    Remove:
+      - readability-magic-numbers

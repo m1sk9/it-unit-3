@@ -1,0 +1,33 @@
+{
+  "enable_language_server": true,
+  "lsp": {
+    "clangd": {
+      "binary": {
+        "arguments": [
+          "--background-index",
+          "--clang-tidy",
+          "--header-insertion=iwyu",
+          "--completion-style=detailed",
+          "--query-driver=/opt/homebrew/bin/gcc-*,/opt/homebrew/bin/g++-*",
+        ],
+      },
+    },
+  },
+  "languages": {
+    "C": {
+      "format_on_save": "on",
+      "tab_size": 2,
+      "hard_tabs": false,
+      "language_servers": ["clangd"],
+    },
+    "C++": {
+      "format_on_save": "on",
+      "tab_size": 2,
+      "hard_tabs": false,
+      "language_servers": ["clangd"],
+    },
+  },
+  "file_types": {
+    "C": ["c", "h"],
+  },
+}

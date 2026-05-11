@@ -1,0 +1,15 @@
+build/
+*.o
+*.obj
+*.a
+*.so
+*.dylib
+*.out
+*.exe
+*.dSYM/
+
+compile_commands.json
+.cache/
+.clangd-index/
+
+.DS_Store
