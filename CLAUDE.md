@@ -51,7 +51,7 @@ src/
 
 ## コード規約
 
-`.clang-format`（LLVM ベース，2 スペースインデント，100 桁）と `.clangd`（`-Wall -Wextra -Wpedantic` + clang-tidy `bugprone-* / performance-* / readability-*`）で自動チェックされる．保存時に整形される（Zed の `format_on_save: on`）．
+`.clang-format`（LLVM ベース，4 スペースインデント，100 桁）と `.clangd`（`-Wall -Wextra -Wpedantic` + clang-tidy `bugprone-* / performance-* / readability-*`）で自動チェックされる．保存時に整形される（Zed の `format_on_save: on`）．
 
 C コードを書く・直すときは以下を守る：
 
