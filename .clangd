@@ -1,3 +1,5 @@
+If:
+  PathMatch: .*\.(c|h)$
 CompileFlags:
   Add:
     - -xc
@@ -6,6 +8,18 @@ CompileFlags:
     - -Wextra
     - -Wpedantic
 
+---
+If:
+  PathMatch: .*\.(cpp|hpp|cc)$
+CompileFlags:
+  Add:
+    - -xc++
+    - -std=c++17
+    - -Wall
+    - -Wextra
+    - -Wpedantic
+
+---
 Diagnostics:
   UnusedIncludes: Strict
   ClangTidy:
