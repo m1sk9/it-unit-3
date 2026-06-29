@@ -13,3 +13,5 @@ compile_commands.json
 .clangd-index/
 
 .DS_Store
+
+/src/10/db
